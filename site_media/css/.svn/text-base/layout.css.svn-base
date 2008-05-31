@@ -1,0 +1,50 @@
+html, body {
+	height:100%;
+}
+	#header {
+		overflow:hidden;
+	}
+		#header p {
+			text-align:center;
+			line-height:40px;
+			font-size:1.4em;
+		}
+		#header h1 {
+			margin-top:2em;
+		}
+			#header h1 a {
+				display:block;
+				height: 0;
+				width:285px;
+				padding-top: 104px;
+				overflow: hidden;
+				line-height:104px;
+				border:0;
+			}
+		#header #pitch {
+			margin-top:6em;
+		}
+			#header #pitch h2 {
+				font-size:2em;
+				line-height:0.5em;
+			}
+			#header #pitch p {
+				text-align:justify;
+				line-height:1.5;
+			}
+		
+		
+	#footer {
+		clear:both;
+	}
+		#footer p {
+			text-align:center;
+			line-height:40px;
+			font-size:1.1em;
+		}
+			#footer p a {
+				line-height:100%;
+				font-size:1.4em;
+				font-weight:bold;
+				border:0;
+			}

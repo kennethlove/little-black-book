@@ -1,0 +1,28 @@
+/* ALL FORMs */
+form, form ul, form ul li { overflow:hidden; }
+	form legend { font-size:1.8em; }
+	form label, form input {
+		display:block;
+		width:20em;
+		float:left;
+		margin-bottom:10px;
+	}
+	form label {
+		text-align:right;
+		padding:0.25em 1em 0 0;
+		width:8em;
+	}
+	form input {
+		border:0;
+		padding:0.15em 0.25em;
+	}
+		form input.submit {
+			width:auto;
+			padding:0.15em 0.5em;
+			margin-left:8.35em;
+		}
+		form input[type=hidden] { display:none; }
+		
+/* LOGIN FORM */
+	form#login label { width:5em; }
+	form#login input.submit { margin-left:5.5em; }

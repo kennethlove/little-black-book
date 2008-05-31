@@ -1,0 +1,31 @@
+/* TAGS */
+body {
+	background:#363636 url("/site_media/img/body_bkg.jpg") bottom left repeat-x;
+	color:#dfdfdf;
+}
+a {
+	border-bottom:1px solid;
+	color:#caa800;
+	text-decoration:none;
+}
+
+/* IDs, etc */
+	#header {
+		background:transparent url("/site_media/img/color_bar.jpg") no-repeat center 40px;
+	}
+		#header h1 a {
+			background:transparent url("/site_media/img/logo.gif") top left no-repeat;
+		}
+		
+	#footer p a {
+		color:#8C2C22;
+	}
+	
+	.blue a, #tab-1 { background-color:#0073AF; }
+	.orange a, #tab-2 { background-color:#E87600; }
+	.green a, #tab-3 { background-color:#009A00; }
+	.purple a, #tab-4 { background-color:#9E2495;}
+	
+/* FORMS */
+	form legend, form label { color:#FFF; }
+	input.submit { background-color:#FFF; }

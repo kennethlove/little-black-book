@@ -1,0 +1,41 @@
+8
+
+dir
+73
+svn://djangodash.com/56_brack3t/db
+svn://djangodash.com/56_brack3t
+
+
+
+2008-05-31T21:51:24.994926Z
+72
+chrisjones
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+3b4b88d8-9347-4da5-ac6f-aa562949931b
+
+lbb.db
+file
+
+
+
+
+2008-05-31T21:51:39.000000Z
+e268495ce72ae339aeb25ae15791a325
+2008-05-31T21:51:24.994926Z
+72
+chrisjones
+has-props
+

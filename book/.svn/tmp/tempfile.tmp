@@ -1,0 +1,46 @@
+from django.core.exceptions import ObjectDoesNotExist
+from django.http import HttpResponse, HttpResponseRedirect
+from django.shortcuts import render_to_response as rtr
+from lbb.book.models import *
+from lbb.book.methods import *
+<<<<<<< .mine
+from lbb.book.login_forms import LoginForm
+=======
+>>>>>>> .r55
+
+def index(request):
+	loginform = LoginForm()
+	return rtr("index.html",{
+		'loginform': loginform,
+	})
+	
+	#TODO: PASSWORD SALT (date joined + every other char of password)
+def test(request):	
+	fuckyou = hash_password("2008-05-31", "obonl")
+	return HttpResponse(fuckyou)
+	
+	
+def login(request):
+	if request.POST['email']:
+		try:
+			u = User.objects.get(email=request.POST['email'])
+			if hash_password(u.date_joined, request.POST['password']) == u.password:
+				request.session['user_id'] = u.id
+				return HttpResponse(request.session['user_id'])
+			else:
+				return HttpResponse("bad username/password")
+		except ObjectDoesNotExist:
+			return HttpResponse("Invalid Login")
+		else:
+			return HttpResponseRedirect('/')
+			
+def user_registration(request):
+	q = 1
+
+
+def logout(request):
+	try:
+		del request.session['user_id']
+	except KeyError:
+		pass
+	return HttpResponse("You're logged out.")

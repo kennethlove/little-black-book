@@ -1,0 +1,29 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<title>{% block title %}{% endblock%} Little Black Book - Never lose contact!</title>
+	<link rel="stylesheet" href="/site_media/css/master.css" type="text/css" media="screen" charset="utf-8" />
+	<script type="text/javascript" charset="utf-8" src="/site_media/js/jquery-1.2.6.pack.js"></script>
+	<script type="text/javascript" charset="utf-8" src="/site_media/js/lbb.js"></script>
+	{% block javascripts %}{% endblock %}
+</head>
+<body>
+	<div id="c" class="container_16">
+		<div id="header">
+			<!-- call session function -->
+			<p>You're new here, aren't you? <a href="#login">Login</a> or <a href="#signup">sign up</a>.</p>
+			<h1 class="grid_6"><a href="/" title="Little Black Book">Little Black Book</a></h1>
+			<div id="pitch" class="grid_10">
+				{%block pitch %}{% endblock %}
+			</div>
+		</div>
+		<div id="content">
+			{% block content %}{% endblock %}
+		</div>
+		<div id="footer">
+			<p>&copy; 2008 <a href="http://brack3t.com" title="brack3t">brack3t</a>. All rights reserved.</p>
+		</div>
+	</div>
+</body>
+</html>

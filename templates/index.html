@@ -1,0 +1,66 @@
+{% extends "template.html" %}
+{% block javascripts %}
+<script type="text/javascript" charset="utf-8" src="/site_media/js/jquery-ui-1.5b3.packed.js"></script>
+<script type="text/javascript" charset="utf-8">
+	$(function(){
+		$("#tab-container > ul").tabs({
+			fx: {
+				height:'toggle',
+				opacity:'toggle'
+			}
+		});
+	});
+</script>
+{% endblock %}
+
+{% block pitch %}
+<h2>All your contacts in one place!</h2>
+<p>Never lose touch with someone again. At Little Black Book you can store all of your friends, family members, and co-workers in an easy-to-use application. Plus you can export them at any time for use in Outlook or Address Book. And it's not just names and numbers, you can hold on to their social information, too.</p>
+{% endblock %}
+{% block content %}
+<div id="tab-container">
+    <ul>
+        <li class="blue"><a href="#tab-1"><span>Accounts</span></a></li>
+        <li class="orange"><a href="#tab-2"><span>What is LBB?</span></a></li>
+        <li class="green"><a href="#tab-3"><span>Three</span></a></li>
+		<li class="purple"><a href="#tab-4"><span>Four</span></a></li>
+    </ul>
+    <div id="tab-1">
+		<form action="." method="post" accept-charset="utf-8" id="signup" class="grid_8">
+        	<fieldset>
+				<legend>Create a Free Account</legend>
+	        	<ul>
+					{{ signupform.as_ul }}
+					<li class="submit"><input type="submit" value="Sign up!" class="submit" /></li>
+				</ul>
+			</fieldset>
+        </form>
+        
+        <form action="." method="post" accept-charset="utf-8" id="login" class="grid_8">
+			<fieldset>
+				<legend>Login to Your Little Black Book</legend>
+				<ul>
+					{{ loginform.as_ul }}
+					<li class="submit"><input type="submit" value="Sign in!" class="submit" /></li>
+				</ul>
+			</fieldset>
+        </form>
+    </div>
+    <div id="tab-2">
+        <h3 class="grid_15">Little Black Book</h3>
+		<p>is a free online application for managing all of your contacts, both online and offline. By contacts we don't just mean a phone number or an email address or even mailing addresses and phone numbers. We mean a photo ID, online services like <a href="http://twitter.com" title="Twitter">Twitter</a> and <a href="http://flickr.com" title="Flickr">Flickr</a>, and IM accounts.</p>
+		<p>Your contacts aren't just limited to Little Black Book either. You can export any or all of your contacts in a handy format that Outlook and Apple's Address Book love, so you can then sync them to your phone or iPod or anywhere else you need them.</p>
+    </div>
+    <div id="tab-3">
+        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+    </div>
+	<div id="tab-4">
+        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+    </div>
+</div>
+
+{% endblock %}

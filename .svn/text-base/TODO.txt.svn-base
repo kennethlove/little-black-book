@@ -1,0 +1,100 @@
+One homepage to explain purpose and details
+	Registration form
+		Email
+		First & Last names
+		Password
+	Sign-in form
+		Email
+		Password
+	
+Profile page
+
+Model Info
+User
+	email
+	password (SHA1)
+	date_joined
+	last_login
+
+Contact
+	user (Assoc)
+	is_primary (if user's personal info - this is created on user registration)
+	First Name
+	Middle Name
+	Last Name
+	Nickname
+	Maiden Name
+	Photo/Avatar
+	Notes
+	URL/Website
+	Last Update
+		Address
+			Street
+			City
+			State/Province
+			Zip/Postal Code
+			Country
+
+Phones
+	contact (Assoc)
+	number
+	location
+
+Emails
+	contact (Assoc)
+	address
+	location
+
+Web
+	contact (Assoc)
+	service (populated from list)
+	username
+	url (created dynamically - hidden field)
+
+IM's
+	contact (Assoc)
+	service
+	username
+
+
+Company
+	contact (Assoc)
+	name
+	job title
+	department
+	business card image
+		Address
+		Street
+		City
+		State/Province
+		Zip/Postal Code
+		Country
+	
+	
+	
+	
+Page to create/edit groups
+	Group name
+	Privacy level
+		Public
+		Friends-only
+		Business-only
+		Family-only
+		Private
+		
+		
+		
+
+Email hCard/vCard to an email address
+
+Download contact's hCard/vCard to computer
+
+Import vCards from computer
+
+Contacts overview page
+
+Search/sort page
+	A-Z last name
+	Alpha by first/last name, city, state, country
+	
+Spot for ads on all pages

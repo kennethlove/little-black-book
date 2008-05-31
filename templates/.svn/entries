@@ -1,0 +1,55 @@
+8
+
+dir
+73
+svn://djangodash.com/56_brack3t/templates
+svn://djangodash.com/56_brack3t
+
+
+
+2008-05-31T21:50:33.479151Z
+71
+kennethlove
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+3b4b88d8-9347-4da5-ac6f-aa562949931b
+
+book
+dir
+
+index.html
+file
+
+
+
+
+2008-05-31T21:49:35.000000Z
+ea6f72bc4e19669e341445ce9f4b20a6
+2008-05-31T21:50:33.479151Z
+71
+kennethlove
+
+template.html
+file
+
+
+
+
+2008-05-31T20:41:10.000000Z
+e31b7f2ceb91eeaf7276f85766c52766
+2008-05-31T21:08:12.076967Z
+67
+kennethlove
+
